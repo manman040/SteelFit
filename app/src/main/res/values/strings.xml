@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SteelFit</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="special_array">
+        <item>Yoga</item>
+        <item>WeightLifting</item>
+        <item>Cardio</item>
+        <item>Dietitian</item>
+        <item>Strength Training</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTrainer">
+
+    <EditText
+        android:id="@+id/AddTrainerName"
+        android:layout_width="361dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:hint="Enter trainer name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spSpecial"
+        android:layout_width="364dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="@+id/spGender"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spGender"
+        app:layout_constraintTop_toBottomOf="@+id/spGender" />
+
+    <Spinner
+        android:id="@+id/spGender"
+        android:layout_width="364dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="@+id/AddTrainerName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AddTrainerName"
+        app:layout_constraintTop_toBottomOf="@+id/AddTrainerAge" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="101dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="4dp"
+        android:text="Gender:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spGender"
+        app:layout_constraintEnd_toEndOf="@+id/AddTrainerName"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="@+id/AddTrainerName" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Specialize In:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spSpecial"
+        app:layout_constraintEnd_toEndOf="@+id/spGender"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spGender" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/profileimg"
+        app:layout_constraintStart_toStartOf="@+id/profileimg"
+        app:layout_constraintTop_toBottomOf="@+id/profileimg" />
+
+    <ImageView
+        android:id="@+id/profileimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSubmitImg"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="@+id/btnSubmitImg"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubmitImg"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/AddTrainerAge"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter trainer age"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/AddTrainerName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AddTrainerName"
+        app:layout_constraintTop_toBottomOf="@+id/AddTrainerName" />
+
+    <Button
+        android:id="@+id/btnSubmitImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="Picture"
+        app:layout_constraintEnd_toEndOf="@+id/spSpecial"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/spSpecial"
+        app:layout_constraintTop_toBottomOf="@+id/spSpecial" />
+
+    <EditText
+        android:id="@+id/AddTrainerExp"
+        android:layout_width="363dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Experience"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/spSpecial"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/spSpecial"
+        app:layout_constraintTop_toBottomOf="@+id/spSpecial" />
+
+    <TextView
+        android:id="@+id/connectionstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Test2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
